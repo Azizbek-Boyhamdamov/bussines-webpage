@@ -8,7 +8,7 @@
 
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
-<body>
+<body >
     <section id="header">
         <div class="container">
             <img src="images/logo.png" class="logo">
@@ -25,7 +25,7 @@
             </div>
         </div>
     </section>
-    
+
     <nav id="sideNav">
         <ul>
             <li><a href="#header">HOME</a></li>
@@ -37,8 +37,8 @@
         </ul>
     </nav>
     <img src="images/menu.png" id="menuBtn">
-    
-    
+
+
 <!--about  -->
 
 <section id="about">
@@ -55,15 +55,15 @@
                 <span class="line-2"></span><br>
                 <span class="line-3"></span>
             </div>
-            
+
             <h2>"Learning is not attained by chance, it must be sought for with ardor and attended to with diligence"</h2>
             <h3>----Abigail Adams</h3>
         </div>
     </div>
-</section>   
-        
-<!--features-->   
-    
+</section>
+
+<!--features-->
+
 <section id="features">
     <div class="feature-row">
         <div class="feature-col">
@@ -90,10 +90,10 @@
         </div>
         <button class="common-btn">Start Free Trial</button>
     </div>
-</section>  
-    
+</section>
+
 <!--courses -->
-    
+
 <section id="courses">
     <div class="container course-row">
         <div class="course-left-col">
@@ -113,8 +113,8 @@
             <img src="images/course.png">
         </div>
     </div>
-</section>  
-        
+</section>
+
 <!--Offer  -->
 
 <section id="offer">
@@ -134,8 +134,8 @@
             </div>
         </div>
     </div>
-</section> 
-   
+</section>
+
 <!--Contact -->
 
 <section id="contact">
@@ -161,10 +161,10 @@
             <img src="images/contact.png">
         </div>
     </div>
-</section>   
-      
+</section>
+
 <!--Footer      -->
-       
+
 <section id="footer">
     <div class="container footer-row">
         <hr>
@@ -206,42 +206,43 @@
         </div>
     </div>
 </section>
-                           
-                 
+
+
 <!--social-icons        -->
-     
+
 <div class="social-icons">
     <img src="images/facebook.png">
     <img src="images/instagram.png">
     <img src="images/twitter.png">
     <img src="images/linkedin.png">
-</div> 
-                                                                                                                   
-    
+</div>
+
+
     <script>
         var menuBtn = document.getElementById("menuBtn");
         var sideNav = document.getElementById("sideNav");
-        
         sideNav.style.right = "-250px";
         menuBtn.onclick = function(){
-            if(sideNav.style.right == "-250px"){
+            if(sideNav.style.right === "-250px"){
                 sideNav.style.right = "0";
+                document.body.style.overflow = "hidden";
             }
             else{
                 sideNav.style.right = "-250px";
+                document.body.style.overflow = "auto";
             }
         }
-        
+
         var scroll = new SmoothScroll('a[href*="#"]',{
             speed: 1000,
             speedAsDuration: true
         });
 
-        
-        
+
+
     </script>
-    
-    
+
+
 </body>
 </html>
 

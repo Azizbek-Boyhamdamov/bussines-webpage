@@ -3,6 +3,7 @@
     padding: 0;
     font-family: sans-serif;
 }
+
 #header{
     height: 100vh;
     background-image: url(images/background.png);
@@ -69,7 +70,9 @@ p{
 .line{
     line-height: 8px;
 }
-
+body{
+    overflow: hidden;
+}
 #sideNav{
     width: 250px;
     height: 100vh;
